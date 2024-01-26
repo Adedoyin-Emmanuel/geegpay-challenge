@@ -1,11 +1,14 @@
 import "./App.css";
-import dashboard from "./pages/dashboard/dashboard";
+import Dashboard from "./pages/dashboard/dashboard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <section>
-      <h2 className="text-4xl text-sky-500">hello world</h2>
-    </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

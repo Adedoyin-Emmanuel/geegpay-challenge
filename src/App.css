@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter.ttf");
+}
+
+@font-face {
+  font-family: Plus Jakarta Sans;
+  src: url("./assets/fonts/JakartaSans-VariableFont.ttf");
+}
+
+html,
+body {
+  font-family: Plus Jakarta Sans;
+}
+
+.inter-font {
+  font-family: Inter !important;
+}
+
+.plus-jakarta-sans {
+  font-family: Plus Jakarta Sans !important;
+}
