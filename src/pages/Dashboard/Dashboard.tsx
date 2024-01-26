@@ -1,7 +1,8 @@
+import DashboardHeader from "../../components/DashboardHeader/DashboardHeader";
 const Dashboard = () => {
   return (
-    <div>
-      <h1>dashboard works!</h1>
+    <div className="w-full h-full">
+      <DashboardHeader />
     </div>
   );
 };
