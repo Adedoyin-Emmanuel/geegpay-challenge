@@ -131,7 +131,7 @@ const DashboardHeader = ({
         </div>
 
         <section
-          className="absolute top-0 hidden bg-white border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4"
+          className="absolute top-0 hidden bg-[#F7F8FA] border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4"
           ref={navBarRef}
         >
           <section className="my-2 flex items-center justify-between">
