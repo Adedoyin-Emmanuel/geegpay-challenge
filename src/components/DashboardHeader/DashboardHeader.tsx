@@ -11,7 +11,7 @@ interface DashboardHeaderProps {
 const DashboardHeader = ({ className }: DashboardHeaderProps): JSX.Element => {
   return (
     <div
-      className={`w-full bg-[#FAFAFA] ${className} flex gap-[18px] items-center justify-between p-[18px] border-b border-b-[#E5EAEF]`}
+      className={`w-full h-[5rem]  bg-[#FAFAFA] ${className} flex gap-[18px] items-center justify-between p-[18px] border-b border-b-[#E5EAEF]`}
     >
       <h3 className="text-[#26282C] text-[20px] font-[600] capitalize hidden sm:block">
         dashboard
