@@ -10,13 +10,14 @@ import GreenTrendIcon from "./../../assets/icons/trending-up-icon.svg";
 import BadTrendIcon from "./../../assets/icons/trending-down-icon.svg";
 import ShoppingIcon from "./../../assets/icons/cart-icon.svg";
 import DollarIcon from "./../../assets/icons/coin-icon.svg";
-
+import LastOrders from "../../components/LastOrders/LastOrders";
+import TopPlatform from "../../components/TopPlatform/TopPlatform";
 const Dashboard = () => {
   return (
-    <div className="w-screen h-full flex">
+    <div className="h-full flex overflow-x-hidden">
       <SideNav />
       <DashboardHeader>
-        <section className="w-full md:flex gap-6 justify-between">
+        <section className="w-full md:flex gap-10 justify-between">
           <SalesTrend />
           <section className="w-full flex md:flex-row flex-col flex-wrap md:items-center md:justify-between  gap-5 md:gap-10 my-5 md:my-0 p-2">
             <Card>
@@ -147,6 +148,10 @@ const Dashboard = () => {
               </section>
             </Card>
           </section>
+        </section>
+        <section className="w-full md:flex gap-10 ">
+          <LastOrders />
+          <TopPlatform className="" />
         </section>
       </DashboardHeader>
     </div>

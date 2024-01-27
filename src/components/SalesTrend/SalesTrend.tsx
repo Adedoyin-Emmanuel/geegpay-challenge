@@ -38,7 +38,7 @@ const SalesTrend = ({ className }: SalesTrendProps): JSX.Element => {
 
   return (
     <div
-      className={`${className} p-6 pb-[1.8rem] rounded-[14px] border-[1px] md:w-[806px]  border-[#EDF2F7] bg-[#fff]`}
+      className={`${className} p-6 pb-[1.8rem] rounded-[14px] border-[1px] md:w-full border-[#EDF2F7] bg-[#fff]`}
     >
       <section className="header mb-4 flex items-center justify-between">
         <h2 className="capitalize  text-[18px] font-[600]  text-[#26282C]">
