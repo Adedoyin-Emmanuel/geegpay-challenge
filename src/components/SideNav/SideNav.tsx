@@ -25,28 +25,28 @@ const SideNav = ({ className }: SideNavProps): JSX.Element => {
           <img src={Logo} alt="Logo" />
         </section>
 
-        <section className="logo cursor-pointer">
+        <section className="cursor-pointer">
           <img src={DashboardIcon} alt="Dashboard icon" />
           <section className="bg-[#0D062D] h-[2.1rem] absolute top-[4.8rem] right-[0rem]  w-[0.3rem] rounded-tl-lg rounded-bl-lg"></section>
         </section>
-        <section className="logo">
+        <section className="cursor-pointer">
           <img src={TrendingIcon} alt="Trend icon" />
         </section>
-        <section className="logo">
+        <section className="cursor-pointer">
           <img src={ProfileIcon} alt="Profile icon" />
         </section>
-        <section className="logo">
+        <section className="cursor-pointer">
           <img src={BoxIcon} alt="Box icon" />
         </section>
-        <section className="logo">
+        <section className="cursor-pointer">
           <img src={DiscountIcon} alt="Discount icon" />
         </section>
 
-        <section className="logo">
+        <section className="cursor-pointer">
           <img src={InfoIcon} alt="Info icon" />
         </section>
 
-        <section className="bg-[#fff] rounded-[100px] flex flex-col p-2 gap-2">
+        <section className="bg-[#fff] cursor-pointer rounded-[100px] flex flex-col p-2 gap-2">
           <section className="bg-[#34CAA5] rounded-[94px] flex items-center justify-center w-[30px] h-[30px]">
             <img
               src={SunIcon}
@@ -61,15 +61,15 @@ const SideNav = ({ className }: SideNavProps): JSX.Element => {
         </section>
       </section>
 
-      <section className="second flex items-center justify-between gap-[16px] flex-col">
-        <section className="ico-1">
+      <section className="flex items-center justify-between gap-[16px] flex-col">
+        <section className="cursor-pointer">
           <img src={ArrowRightIcon} alt="Arrow right icon" />
         </section>
-        <section className="ico-2">
+        <section className="cursor-pointer">
           <img src={SettingsIcon} alt="Settings icon" />
         </section>
 
-        <section className="ico-3">
+        <section className="cursor-pointer">
           <img src={LogoutIcon} alt="Logout icon" />
         </section>
       </section>
