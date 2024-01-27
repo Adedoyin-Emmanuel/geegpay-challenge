@@ -32,6 +32,64 @@ body {
   animation: fadeOut 0.5s linear;
 }
 
+.graph-line:hover {
+  cursor: pointer !important;
+  background: linear-gradient(
+    180deg,
+    #34caa5 0%,
+    rgba(52, 202, 165, 0) 100%
+  ) !important;
+}
+
+.graph-line:nth-child(2) {
+  height: 120px !important;
+}
+
+.graph-line:nth-child(3) {
+  height: 40px !important;
+}
+
+.graph-line:nth-child(4) {
+  height: 121px !important;
+}
+
+.graph-line:nth-child(5) {
+  height: 81px !important;
+}
+
+.graph-line:nth-child(6) {
+  height: 216px !important;
+}
+
+.graph-line:nth-child(7) {
+  height: 81px !important;
+}
+
+.graph-line:nth-child(8) {
+  height: 131px !important;
+}
+
+.graph-line:nth-child(9) {
+  height: 182px !important;
+}
+
+.graph-line:nth-child(10) {
+  height: 51px !important;
+}
+
+.graph-line:nth-child(11) {
+  height: 171px !important;
+}
+
+.graph-line:nth-child(12) {
+  height: 151px !important;
+}
+
+.graph-lines {
+  background-image: url("./assets/icons/Line.svg");
+  background-size: cover;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

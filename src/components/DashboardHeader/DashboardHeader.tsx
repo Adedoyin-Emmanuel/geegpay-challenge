@@ -228,7 +228,13 @@ const DashboardHeader = ({
         </section>
       </section>
 
-      <section className="w-full-h-full p-8">{children}</section>
+      <section className="w-full-h-full md:p-8 p-1 md:my-0 my-3">
+        {/* <h3 className="text-[#26282C] text-[20px] font-[600] capitalize md:hidden my-2">
+          dashboard
+        </h3> */}
+
+        {children}
+      </section>
     </section>
   );
 };
