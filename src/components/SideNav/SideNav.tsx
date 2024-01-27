@@ -18,7 +18,7 @@ interface SideNavProps {
 const SideNav = ({ className }: SideNavProps): JSX.Element => {
   return (
     <div
-      className={`min-h-screen max-h-screen w-[80px] py-[20px] gap-[20px] px-[0px]  bg-[#F7F8FA] border-[1px]  border-r-[#EBECF2] flex items-center justify-between flex-col transform  ${className}`}
+      className={`hidden min-h-screen max-h-screen w-[80px] py-[20px] gap-[20px] px-[0px]  bg-[#F7F8FA] border-[1px]  border-r-[#EBECF2] md:flex items-center justify-between flex-col transform  ${className}`}
     >
       <section className="flex items-center justify-between flex-col gap-[20px]">
         <section className="logo flex items-center">
