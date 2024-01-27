@@ -12,7 +12,7 @@ interface LastOrdersProps {
 const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
   return (
     <div
-      className={`w-full h-[542px]  relative bg-white rounded-[14px] border border-slate-100 my-5 overflow-hidden ${className}`}
+      className={`w-full h-[542px]  relative bg-white rounded-[14px] border border-slate-100 my-5 overflow-x-scroll ${className}`}
     >
       <div className="w-[766px] left-[20px] top-[18px] absolute justify-between items-center inline-flex">
         <div className="text-zinc-800 text-lg font-semibold font-['Plus Jakarta Sans'] leading-relaxed">
@@ -42,7 +42,7 @@ const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
       </div>
 
       <div className="left-[-10px] top-[102px] absolute flex-col w-full justify-between items-start gap-4 inline-flex overflow-x-scroll">
-        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2  overflow-x-auto">
+        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2 gap-x-2">
           <img src={Person1} alt="Person 1" />
           <div className="text-gray-700 text-base font-medium leading-normal">
             Marcus Bergson
@@ -61,7 +61,7 @@ const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
             <p>View</p>
           </div>
         </section>
-        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2  overflow-x-auto">
+        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2 gap-x-2">
           <img src={Person2} alt="Person 1" />
           <div className="text-gray-700 text-base font-medium leading-normal">
             Jaydon Vaccaro
@@ -81,7 +81,7 @@ const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
           </div>
         </section>
 
-        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2  overflow-x-auto">
+        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2 gap-x-2">
           <img src={Person3} alt="Person 1" />
           <div className="text-gray-700 text-base font-medium leading-normal">
             Corey Schleifer
@@ -101,7 +101,7 @@ const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
           </div>
         </section>
 
-        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2  overflow-x-auto">
+        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2 gap-x-2">
           <img src={Person4} alt="Person 1" />
           <div className="text-gray-700 text-base font-medium leading-normal">
             Cooper Press
@@ -121,7 +121,7 @@ const LastOrders = ({ className }: LastOrdersProps): JSX.Element => {
           </div>
         </section>
 
-        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2  overflow-x-auto">
+        <section className="trans w-full flex items-center justify-around border-y-[1px] border-t-[#EDF2F6] p-2 my-2 gap-x-2">
           <img src={Person5} alt="Person 1" />
           <div className="text-gray-700 text-base font-medium leading-normal">
             Phillip Lubin
