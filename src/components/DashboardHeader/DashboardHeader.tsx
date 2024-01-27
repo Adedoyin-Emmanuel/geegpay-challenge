@@ -16,12 +16,34 @@ import SettingsIcon from "./../../assets/icons/settings-icon.svg";
 import LogoutIcon from "./../../assets/icons/logout-icon.svg";
 import SunIcon from "./../../assets/icons/sun-icon.svg";
 import InfoIcon from "./../../assets/icons/info-circle-icon.svg";
+import { useState, useRef } from "react";
 
 interface DashboardHeaderProps {
   className?: string;
 }
 
 const DashboardHeader = ({ className }: DashboardHeaderProps): JSX.Element => {
+  const [navbarToggled, setNavbarToggle] = useState<boolean>(true);
+  const navBarRef = useRef<HTMLDivElement | any>();
+
+  const handleToggleNavbar = () => {
+    const navBarContainer = navBarRef.current;
+    setNavbarToggle(!navbarToggled);
+
+    if (navbarToggled) {
+      if (navBarContainer) {
+        navBarContainer.classList.remove("fade-out");
+        navBarContainer.classList.remove("hidden");
+        navBarContainer.classList.add("fade-in");
+      }
+    } else {
+      if (navBarContainer) {
+        navBarContainer.classList.remove("fade-in");
+        navBarContainer.classList.add("fade-out");
+        navBarContainer.classList.add("hidden");
+      }
+    }
+  };
   return (
     <section className="w-full">
       <div
@@ -31,7 +53,7 @@ const DashboardHeader = ({ className }: DashboardHeaderProps): JSX.Element => {
           dashboard
         </h3>
 
-        <section className="ham-burger md:hidden">
+        <section className="ham-burger md:hidden" onClick={handleToggleNavbar}>
           <svg
             stroke="currentColor"
             fill="#26282C"
@@ -100,12 +122,15 @@ const DashboardHeader = ({ className }: DashboardHeaderProps): JSX.Element => {
         </section>
       </div>
 
-      <section className="absolute top-0 md:hidden mobile-nav bg-white border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4">
+      <section
+        className="absolute top-0 hidden bg-white border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4"
+        ref={navBarRef}
+      >
         <section className="my-2 flex items-center justify-between">
           <section className="logo">
             <img src={Logo} alt="Logo" />
           </section>
-          <section className="close-icon">
+          <section className="close-icon" onClick={handleToggleNavbar}>
             <img src={CloseIcon} alt="Close Icon" />
           </section>
         </section>

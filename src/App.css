@@ -20,3 +20,33 @@ body {
 .plus-jakarta-sans {
   font-family: Plus Jakarta Sans !important;
 }
+
+.fade-in {
+  display: block;
+  transition: 0.5s;
+  animation: fadeIn 0.5s linear;
+}
+
+.fade-out {
+  transition: 0.5s;
+  animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
