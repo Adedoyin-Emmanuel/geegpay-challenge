@@ -29,6 +29,7 @@ const DashboardHeader = ({
 }: DashboardHeaderProps): JSX.Element => {
   const [navbarToggled, setNavbarToggle] = useState<boolean>(true);
   const navBarRef = useRef<HTMLDivElement | any>();
+  const parentRef = useRef<HTMLDivElement | any>();
 
   const handleToggleNavbar = () => {
     const navBarContainer = navBarRef.current;
@@ -39,17 +40,20 @@ const DashboardHeader = ({
         navBarContainer.classList.remove("fade-out");
         navBarContainer.classList.remove("hidden");
         navBarContainer.classList.add("fade-in");
+        parentRef.current.classList.add("fixed");
+        parentRef.current.classList.add("fixed");
       }
     } else {
       if (navBarContainer) {
         navBarContainer.classList.remove("fade-in");
         navBarContainer.classList.add("fade-out");
         navBarContainer.classList.add("hidden");
+        parentRef.current.classList.remove("fixed");
       }
     }
   };
   return (
-    <section className="w-full flex flex-col">
+    <section className="w-full flex flex-col" ref={parentRef}>
       <section className="w-full">
         <div
           className={`w-full h-[5rem]  bg-[#FAFAFA] ${className} flex gap-[18px] items-center justify-between p-[18px] border-b border-b-[#E5EAEF]`}
@@ -131,7 +135,7 @@ const DashboardHeader = ({
         </div>
 
         <section
-          className="absolute top-0 hidden bg-[#F7F8FA] border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4"
+          className="absolute top-0 hidden bg-[#F7F8FA] z-[1000] border-[1px] border-[#DADDDD] w-3/4 h-screen  p-4"
           ref={navBarRef}
         >
           <section className="my-2 flex items-center justify-between">
@@ -229,7 +233,6 @@ const DashboardHeader = ({
       </section>
 
       <section className="w-full-h-full md:p-8 p-1 md:my-0 my-3">
-
         {children}
       </section>
     </section>

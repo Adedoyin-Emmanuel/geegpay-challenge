@@ -30,7 +30,7 @@ const Dashboard = () => {
               </h3>
               <h1 className="text-2xl font-[600]  text-[#3A3F51]">350</h1>
 
-              <section className="flex items-start justify-between">
+              <section className="flex items-start justify-between md:my-0 my-2">
                 <div
                   className="rounded-[1000px] flex items-center justify-between p-2 px-4  h-[24px]"
                   style={{
@@ -64,7 +64,7 @@ const Dashboard = () => {
               </h3>
               <h1 className="text-2xl font-[600]  text-[#3A3F51]">270</h1>
 
-              <section className="flex items-start justify-between">
+              <section className="flex items-start justify-between md:my-0 my-2">
                 <div
                   className="rounded-[1000px] flex items-center justify-between p-2 px-4  h-[24px]"
                   style={{
@@ -94,7 +94,7 @@ const Dashboard = () => {
               </h3>
               <h1 className="text-2xl font-[600]  text-[#3A3F51]">1576</h1>
 
-              <section className="flex items-start justify-between">
+              <section className="flex items-start justify-between md:my-0 my-2">
                 <div
                   className="rounded-[1000px] flex items-center justify-between p-2 px-4  h-[24px]"
                   style={{
@@ -124,7 +124,7 @@ const Dashboard = () => {
               </h3>
               <h1 className="text-2xl font-[600]  text-[#3A3F51]">$350.00</h1>
 
-              <section className="flex items-start justify-between">
+              <section className="flex items-start justify-between md:my-0 my-2">
                 <div
                   className="rounded-[1000px] flex items-center justify-between p-2 px-4  h-[24px]"
                   style={{
